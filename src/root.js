@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "./root.css";
+import "./static/css/root.css";
 
 import FrontPage from "./components/frontPageComponent/front-page";
 import Animation from "./components/animationComponent/animation";

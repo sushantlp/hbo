@@ -5,7 +5,7 @@ import { Container, Header, Segment } from "semantic-ui-react";
 import NavHeader from "../headerComponent/header";
 import Footer from "../footerComponent/footer";
 
-import "../../root.css";
+import "../../static/css/root.css";
 import "semantic-ui-css/semantic.min.css";
 
 const TermsOfService = () => (
