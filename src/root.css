@@ -5,3 +5,28 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+.header-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-name {
+  color: rgb(39, 37, 37);
+  font-weight: 600;
+  font-size: 20px;
+}
+.underscore {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(237, 50, 55)),
+    to(#dee5ef)
+  );
+  margin-top: -5px;
+  content: "";
+  height: 4px;
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+}

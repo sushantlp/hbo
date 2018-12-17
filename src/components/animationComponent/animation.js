@@ -33,7 +33,7 @@ export default class Animation extends React.Component {
           </div>
         </Animated>
 
-        {/* <Animated
+        <Animated
           animationIn="slideInLeft"
           animationOut="pulse"
           isVisible={true}
@@ -42,7 +42,6 @@ export default class Animation extends React.Component {
             <span className="Span">Hover</span>
           </div>
         </Animated>
-
         <Animated
           animationIn="slideInRight"
           animationOut="pulse"
@@ -52,7 +51,6 @@ export default class Animation extends React.Component {
             <span className="Span">Right-Hover</span>
           </div>
         </Animated>
-
         <Animated
           animationIn="slideInRight"
           animationOut="pulse"
@@ -62,7 +60,6 @@ export default class Animation extends React.Component {
             <span className="Span">Right-Hover</span>
           </div>
         </Animated>
-
         <Animated
           animationIn="slideInRight"
           animationOut="pulse"
@@ -71,7 +68,7 @@ export default class Animation extends React.Component {
           <div className="square6">
             <span className="Span">Right-Hover</span>
           </div>
-        </Animated> */}
+        </Animated>
       </Container>
     );
   }

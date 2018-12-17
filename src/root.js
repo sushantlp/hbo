@@ -7,6 +7,10 @@ import "./root.css";
 
 import FrontPage from "./components/frontPageComponent/front-page";
 import Animation from "./components/animationComponent/animation";
+import Initial from "./components/indexComponent";
+import Faq from "./components/faqComponent/faq";
+import Privacy from "./components/privacyComponent/privacy";
+import Term from "./components/termComponent/term";
 
 // Router root
 const Root = ({ store }) => (
@@ -15,7 +19,11 @@ const Root = ({ store }) => (
       <div>
         <Switch>
           <Route exact path="/" component={FrontPage} />
+          <Route exact path="/terms/" component={Term} />
+          <Route exact path="/privacy/" component={Privacy} />
+          <Route exact path="/faq/" component={Faq} />
           <Route exact path="/animation/" component={Animation} />
+          <Route exact path="/initial/" component={Initial} />
         </Switch>
       </div>
     </BrowserRouter>
