@@ -4,7 +4,6 @@ import {
   Dropdown,
   Grid,
   Icon,
-  Segment,
   Container
 } from "semantic-ui-react/dist/commonjs";
 
@@ -15,7 +14,6 @@ export default class Search extends React.Component {
   render() {
     return (
       <div
-        fluid
         style={{
           width: "auto",
           height: "500px",
@@ -35,7 +33,7 @@ export default class Search extends React.Component {
         </Grid>
 
         <Container>
-          <Grid columns="equal">
+          <Grid stackable columns="equal">
             <Grid.Row>
               <Grid.Column>
                 <Dropdown
