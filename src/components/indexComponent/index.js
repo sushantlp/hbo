@@ -7,6 +7,7 @@ import Footer from "../footerComponent/footer";
 import Search from "./searchComponent/search";
 import Specialization from "./specializationComponent/specialization";
 import Hospital from "./hospitalComponent/hospital";
+import Ambulance from "./ambulanceComponent/ambulance";
 
 export default class Animation extends React.Component {
   render() {
@@ -16,6 +17,7 @@ export default class Animation extends React.Component {
         <Search />
         <Specialization />
         <Hospital />
+        <Ambulance />
         <Footer />
       </React.Fragment>
     );
