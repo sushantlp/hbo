@@ -1,12 +1,12 @@
-.navbar-container {
+.navbar-container-white {
   background-color: white;
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
-
   font-family: "Timeburner", sans-serif;
 }
 
+.navbar-container-blue {
+  background-color: #263868;
+  font-family: "Timeburner", sans-serif;
+}
 .ui.menu .item {
   position: inherit;
 }

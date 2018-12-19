@@ -2,35 +2,47 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Menu } from "semantic-ui-react/dist/commonjs";
+
 import Sticky from "react-stickynode";
 
 import "semantic-ui-css/semantic.min.css";
 import "./static/css/header.css";
 import "../../static/css/root.css";
 
+let lastScrollY = 0;
+
 export default class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      colorChange: false
+    };
+  }
+
   componentDidMount() {
-    window.addEventListener("scroll", function() {
-      document.getElementById("showScroll").innerHTML = pageYOffset + "px";
-    });
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("scroll", this.trackScrolling);
+    document.removeEventListener("scroll", this.handleScroll);
   }
 
-  trackScrolling = () => {
-    const wrappedElement = document.getElementsByClassName("navbar-container");
-    if (
-      wrappedElement.scrollHeight - wrappedElement.scrollTop ===
-      wrappedElement.clientHeight
-    ) {
-      console.log("header bottom reached");
-      document.removeEventListener("scroll", this.trackScrolling);
-    } else {
-      console.log(wrappedElement);
+  nav = React.createRef();
+
+  handleScroll = () => {
+    lastScrollY = window.scrollY;
+
+    if (lastScrollY >= 500) {
+      this.setState({
+        colorChange: true
+      });
+    } else if (lastScrollY <= 500) {
+      this.setState({
+        colorChange: false
+      });
     }
   };
+
   render() {
     return (
       <Sticky
@@ -38,13 +50,19 @@ export default class Header extends React.Component {
         top={0}
         bottomBoundary={".footer-container"}
         innerZ={1}
-        onStateChange={this.call}
       >
-        <div className="navbar-container">
+        <div
+          className={
+            this.state.colorChange
+              ? "navbar-container-blue"
+              : "navbar-container-white"
+          }
+          ref={this.nav}
+        >
           <form action="javascript:void(0)" autoComplete={"off"}>
             <Menu
               style={{
-                backgroundColor: "white"
+                backgroundColor: this.state.colorChange ? "#263868" : "white"
               }}
             >
               <Link to={"/"}>
