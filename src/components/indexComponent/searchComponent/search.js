@@ -41,6 +41,7 @@ export default class Search extends React.Component {
                   search
                   fluid
                   selection
+                  style={{ height: "50px" }}
                   icon={
                     <Icon
                       name="map marker alternate"
@@ -59,6 +60,7 @@ export default class Search extends React.Component {
                   fluid
                   search
                   selection
+                  style={{ height: "50px" }}
                   icon={
                     <Icon
                       name="map marker alternate"
@@ -78,11 +80,12 @@ export default class Search extends React.Component {
                   fluid
                   search
                   selection
+                  style={{ height: "50px" }}
                   icon={
                     <Icon
                       name="search"
                       style={{
-                        marginTop: "-2vh",
+                        marginTop: "-1.5vh",
                         float: "right",
                         color: "grey"
                       }}

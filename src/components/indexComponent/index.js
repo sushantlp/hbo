@@ -8,6 +8,7 @@ import Search from "./searchComponent/search";
 import Specialization from "./specializationComponent/specialization";
 import Hospital from "./hospitalComponent/hospital";
 import Ambulance from "./ambulanceComponent/ambulance";
+import AirAmbulance from "./airAmbulanceComponent/airAmbulance";
 
 export default class Animation extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class Animation extends React.Component {
         <Specialization />
         <Hospital />
         <Ambulance />
+        <AirAmbulance />
         <Footer />
       </React.Fragment>
     );
