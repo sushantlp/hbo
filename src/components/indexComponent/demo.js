@@ -1,9 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import Slider from "react-slick";
-import { Container, Card, Icon } from "semantic-ui-react/dist/commonjs";
 
-import "../../../static/css/root.css";
-import "./static/css/ambulance.css";
+import {
+  Container,
+  Button,
+  Grid,
+  Card,
+  Icon
+} from "semantic-ui-react/dist/commonjs";
+import "./demo.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -72,7 +77,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class Ambulance extends React.Component {
+export default class CustomArrows extends Component {
   render() {
     const settings = {
       dots: false,
@@ -85,7 +90,7 @@ export default class Ambulance extends React.Component {
     return (
       <Container style={{ width: "89em" }}>
         <div>
-          <div className="ambulance-container">
+          <div className="header-container">
             <h4 className="header-name">AMBULANCE</h4>
             <div className="underscore" />
           </div>

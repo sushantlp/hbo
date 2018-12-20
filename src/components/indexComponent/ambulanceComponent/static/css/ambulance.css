@@ -23,3 +23,18 @@
 .ambulance-card {
   box-shadow: 4px 4px 10px 0;
 }
+
+.slick-prev,
+.slick-next {
+  font-size: 15px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+
+.ambulance-container {
+  margin-top: 20px;
+  margin-bottom: -22px;
+}

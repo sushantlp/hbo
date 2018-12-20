@@ -22,7 +22,7 @@ body {
 .header-name {
   color: rgb(39, 37, 37);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 .underscore {
   background-image: -webkit-gradient(

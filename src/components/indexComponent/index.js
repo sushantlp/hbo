@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "semantic-ui-react/dist/commonjs";
+// import { Container } from "semantic-ui-react/dist/commonjs";
 
 import Header from "../headerComponent/header";
 import Footer from "../footerComponent/footer";
@@ -20,6 +20,7 @@ export default class Animation extends React.Component {
         <Hospital />
         <Ambulance />
         <AirAmbulance />
+
         <Footer />
       </React.Fragment>
     );
