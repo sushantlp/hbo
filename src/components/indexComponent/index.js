@@ -18,8 +18,9 @@ export default class Animation extends React.Component {
         <Search />
         <Specialization />
         <Hospital />
-        <AirAmbulance />
         <Ambulance />
+        <AirAmbulance />
+
         <Footer />
       </React.Fragment>
     );

@@ -49,7 +49,7 @@ export default class Header extends React.Component {
         enabled={true}
         top={0}
         bottomBoundary={".footer-container"}
-        innerZ={1}
+        innerZ={2}
       >
         <div
           className={

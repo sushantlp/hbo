@@ -8,7 +8,7 @@ import "./static/css/airAmbulance.css";
 export default class AirAmbulance extends React.Component {
   render() {
     return (
-      <Container className="air-ambulance-container">
+      <Container className="air-ambulance-container" style={{ width: "89em" }}>
         <div className="header-container">
           <h4 className="header-name">AIR AMBULANCE</h4>
           <div className="underscore" />

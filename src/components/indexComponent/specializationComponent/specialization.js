@@ -8,7 +8,7 @@ import "./static/css/specialization.css";
 export default class Specialization extends React.Component {
   render() {
     return (
-      <Container className="specialization-container">
+      <Container className="specialization-container" style={{ width: "89em" }}>
         <div className="header-container">
           <h4 className="header-name">SPECIALIZATION</h4>
           <div className="underscore" />

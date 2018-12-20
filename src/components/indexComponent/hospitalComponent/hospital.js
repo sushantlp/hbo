@@ -8,7 +8,7 @@ import "./static/css/hospital.css";
 export default class Hospital extends React.Component {
   render() {
     return (
-      <Container className="hospital-container">
+      <Container className="hospital-container" style={{ width: "89em" }}>
         <div className="header-container">
           <h4 className="header-name">HOSPITAL</h4>
           <div className="underscore" />
@@ -98,16 +98,14 @@ export default class Hospital extends React.Component {
 
         <Button
           size="large"
-          basic
-          color="black"
+          color="white"
           style={{
             marginTop: "2em",
             marginBottom: "2em",
-            marginLeft: "45%"
+            marginLeft: "45%",
+            backgroundColor: "white"
           }}
-        >
-          View More
-        </Button>
+        />
       </Container>
     );
   }
