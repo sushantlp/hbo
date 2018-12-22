@@ -25,10 +25,6 @@ export default class Animation extends React.Component {
                 </div>
               </Animated>
 
-              {/* <Animated animationIn="zoomIn" animationOut="pulse" isVisible={true}>
-          <div className="circle" />
-        </Animated> */}
-
               <Animated
                 animationIn="bounceInLeft"
                 animationOut="pulse"
@@ -49,6 +45,8 @@ export default class Animation extends React.Component {
                 </div>
               </Animated>
             </Grid.Column>
+            <Grid.Column />
+            <Grid.Column />
             <Grid.Column>
               <Animated
                 animationIn="zoomIn"
@@ -75,6 +73,8 @@ export default class Animation extends React.Component {
                 <div className="circle" style={{ backgroundColor: "white" }} />
               </Animated>
             </Grid.Column>
+            <Grid.Column />
+            <Grid.Column />
             <Grid.Column>
               <Animated
                 animationIn="bounceInRight"
